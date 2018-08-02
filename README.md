@@ -10,9 +10,9 @@ _NOTE: This code also enables simple HTTP GET control_
 # How-to
 In this guide we describe how to accomplish this with a cheap NodeMCU board and a few components.
 
-**Hardware description in the PDF below: https://github.com/cklit/smartbeogram/blob/master/Hardware%20guide%20NodeMCU.pdf**
-
 **Video demo and guide for putting the code on the NodeMCU and setting up Adafruit and IFTTT here: https://youtu.be/vhII74I_9sY**
+
+**Hardware description in the PDF below: https://github.com/cklit/smartbeogram/blob/master/Hardware%20guide%20NodeMCU.pdf**
 
 **Link for the _Additional Board Manager URL_ in Arduino IDE: http://arduino.esp8266.com/stable/package_esp8266com_index.json**
 
