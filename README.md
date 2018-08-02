@@ -4,6 +4,8 @@ Have you ever dreamt about adding a turntable to your multiroom system? No probl
 
 But what if you ALSO could voice-control your BeoGram turntable?
 
+_NOTE: This code also enables simple HTTP GET control_
+
 
 # How-to
 In this guide we describe how to accomplish this with a cheap NodeMCU board and a few components.
