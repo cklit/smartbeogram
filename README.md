@@ -24,6 +24,8 @@ In this guide we describe how to accomplish this with a cheap NodeMCU board and 
 
 - Optocoupler 4N35 
 
+- 220 ohm resistor
+
 - Female DIN plug
 
 - Different wires, depending on how you decide to connect it all together in the end :) Example in the Hardware guide-PDF.
