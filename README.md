@@ -31,3 +31,6 @@ In this guide we describe how to accomplish this with a cheap NodeMCU board and 
 
 # Credit
 A huge thanks to Maurizio for helping me realizing this idea :)
+
+Disclaimer:
+This solution is not in any way supported or maintained by Bang & Olufsen.
