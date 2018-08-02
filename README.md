@@ -16,7 +16,9 @@ In this guide we describe how to accomplish this with a cheap NodeMCU board and 
 
 
 # Parts needed:
-- NodeMCU 1.0 (or Wemos D1 mini board - same procedure)
+- The .ino file from in here (Click the green _Clone or Download_-button, and select _Download ZIP_)
+
+- NodeMCU 1.0 (or Wemos D1 mini board - exact same installation procedure)
 
 - Optocoupler 4N35 
 
