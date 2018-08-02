@@ -27,3 +27,7 @@ In this guide we describe how to accomplish this with a cheap NodeMCU board and 
 - Female DIN plug
 
 - Different wires, depending on how you decide to connect it all together in the end :) Example in the Hardware guide-PDF.
+
+
+# Credit
+A huge thanks to Maurizio for helping me realizing this idea :)
