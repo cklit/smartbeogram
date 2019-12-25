@@ -31,6 +31,19 @@ In this guide we describe how to accomplish this with a cheap NodeMCU board and 
 - Different wires, depending on how you decide to connect it all together in the end :) Example in the Hardware guide-PDF.
 
 
+# ESPHome
+If you are using Home Assistant, you might be interested in using the fantastic ESPHome software instead.
+
+- Copy the beogram-esphome.yaml file to your ESPHome folder
+
+- Change SSID and password to your own
+
+- Connect optocoupler to TX pin (GPIO1 on Wemos D1 Mini)
+
+- Add the ESPHome integration to Home Assistant
+
+- NOTE: This has not been tested yet, so if the code does not work, try changing Line 23: "inverted: true" to "inverted: false"
+
 # Credit
 A huge thanks to Maurizio for helping me realizing this idea :)
 
