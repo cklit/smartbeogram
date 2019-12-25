@@ -1,0 +1,86 @@
+esphome:
+  name: beogram
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: 'Your SSID' ### CHANGE THIS
+  password: 'YourPassword' ### CHANGE THIS
+
+# Enable logging
+logger:
+
+web_server:
+  port: 80
+# Enable Home Assistant API
+api:
+
+ota:
+
+remote_transmitter:
+  pin:
+    number: GPIO1
+    inverted: true ### CHANGE THIS IF IT DOES NOT WORK
+  carrier_duty_percent: 50%
+
+
+switch:
+  - platform: template
+    name: Phono
+    id: phono
+    turn_on_action:
+      - remote_transmitter.transmit_raw:
+          code: [3125, -3125, 3125, -3125, 3125, -6250, 3125, -2500]
+          repeat:
+            times: 2
+            wait_time: 50ms
+      - delay: 500ms
+      - switch.turn_off: phono
+
+  - platform: template
+    name: Next
+    id: next
+    turn_on_action:
+      - remote_transmitter.transmit_raw:
+          code: [3125, -6250, 3125, -3125, 3125, -3125, 3125, -2500]
+          repeat:
+            times: 2
+            wait_time: 50ms
+      - delay: 500ms
+      - switch.turn_off: next
+
+  - platform: template
+    name: Prev
+    id: prev
+    turn_on_action:
+      - remote_transmitter.transmit_raw:
+          code: [12500, -6250, 6250, -2500]
+          repeat:
+            times: 2
+            wait_time: 50ms
+      - delay: 500ms
+      - switch.turn_off: prev
+
+  - platform: template
+    name: Stop
+    id: stop
+    turn_on_action:
+      - remote_transmitter.transmit_raw:
+          code: [6250, -6250, 3125, -3125, 6250, -2500]
+          repeat:
+            times: 2
+            wait_time: 50ms
+      - delay: 500ms
+      - switch.turn_off: stop
+
+  - platform: template
+    name: Stby
+    id: stby
+    turn_on_action:
+      - remote_transmitter.transmit_raw:
+          code: [6250, -6250, 6250, -3125, 3125, -2500]
+          repeat:
+            times: 2
+            wait_time: 50ms
+      - delay: 500ms
+      - switch.turn_off: stby
